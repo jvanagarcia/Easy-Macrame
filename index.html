@@ -1,110 +1,187 @@
 <!doctype html>
 <html>
 <head>
-	<style>
-		body {background-color:linen}
-		h1 {color:saddlebrown; background-color: blanchedalmond}
-		h2 {color: peru}
-		h3 {color: firebrick}
-		p {color:darkgoldenrod}
-		
-		
-		a:link {
-			color: sienna;
-			background-color: transparent;
-			text-decoration: none;
-		}
-<meta charset="UTF-8">
-<title>HTML 1</title>
-	<style>
-		.thing{
-			font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
-			color: firebrick;
-		}
-		
-		#Things{
-			font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
-			color: darkolivegreen;
-			font-size: 125%
-			}
-		
-    </style>
+   <script type="text/javascript">
+	window.onload = function() {
+	document.getElementById("op1").style.background= 'AB7C6C';
+	}
+	</script>
+<meta charset="utf-8">
+<title>Home Page</title>
 	
+<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+<link href="main.css" type="text/css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Lateef&family=Ribeye&family=Righteous&display=swap" rel="stylesheet">
+	
+<style>
+	/*buttons*/
+.button {
+  background-color: white;
+  border: 2px solid #AB7C6C;
+  border-radius: 15px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgba(171,124,108,0.35);
+  color: white;
+}
+
+	/*grid*/
+.item1 { grid-area: header; 
+		}
+.item2 { grid-area: nav; 
+		}
+.item3 { grid-area: knots; 
+	    background-image: url("Images/jungle neutral.jpg")
+		}
+.item4 { grid-area:historyimg;
+		}
+
+.item5 { grid-area: history;
+		}
+.item6 { grid-area: historybt;
+		}
+.item7 { grid-area: inspirationimg;
+		}
+.item8 { grid-area: inspiration;
+		}
+.item9 { grid-area: inspirationbt; 
+		}
+.item10 { grid-area: aboutimg; 
+		}
+.item11 { grid-area: about; 
+		}
+.item12 { grid-area: aboutbt; 
+		}
+.item13 { grid-area: faq; 
+		}
+.item14 { grid-area: nav2; 
+		}
+.item15 { grid-area: contact; 
+		}
+.item16 { grid-area: footer; 
+		}
+	
+.grid-container {
+  display: grid;
+  padding: 10px;
+  grid-template-areas:
+    'header header'
+	'nav nav'
+	'knots knots'
+	'historyimg history'
+	'historybt historybt'
+	'inspirationimg inspiration'
+	'inspirationbt inspirationbt'
+	'aboutimg about'
+	'aboutbt aboutbt'
+	'faq faq'
+	'nav2 nav2'
+	'contact contact'
+    'footer footer';
+}
+
+/*mobile and tablet view*/
+@media (max-width:400px) and (max-width:768px){
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+	'nav'
+	'knots'
+	'historyimg'
+	'history'
+	'historybt'
+	'inspirationimg'
+	'inspiration'
+	'inspirationbt'
+	'aboutimg'
+	'about'
+	'aboutbt'
+	'faq'
+	'nav2'
+	'contact'
+    'footer';
+  padding: 10px;}
+}
+</style>
 </head>
-
 <body>
-	<h1 title="Try it"><strong>Easily Macrame</strong></h1>
-	<h2><b>An ancient weaving technique</b></h2>
-	<p>Knitting without needles is possible thanks to macrame! Macrame is one of the easy crafts that everyone can do because it is based on weaving and braiding threads with your hands making knots.</p>
 	
-	 <table> 
-	  <tr align="left">
-	<th><img src="Images/wallhanging.jpg" width="260" height="260" alt="Wall Hanging"/></th>
-    <th><img src="Images/keychains.jpg" width="260" height="260" alt="Key Chains"/></th>
-    <th><img src="Images/coaster.jpg" width="260" height="260" alt="Coasters"/></th>
-	<th><img src="Images/dreamcatcher.jpg" width="260" height="260" alt="Dreamcatcher"/></th>
-	<th><img src="Images/bags.jpg" width="260" height="260" alt="Bags"/></th>
-	  </tr>
-     </table>
-	
-	<table style="width:80%; border: thin solid; color: firebrick">
-		
-  <tr align="left">
-    <th  id="Things"><i>Things You Can Do</i></th>
-    <th></th>
-	<th></th>
-   
-  </tr>
-		
-  <tr >
-    <td class="thing"><ins><a>Wall Hanging</a></ins></td>
-    <td class="thing"><ins>Key Chains</ins></td>
-	<td class="thing"><ins>Ornaments</ins></td>
-  </tr>
-  <tr>
-    <td class="thing"><ins>Coasters</ins></td>
-    <td class="thing"><ins>Dream catchers</ins></td>
-	<td class="thing"><ins>Curtains</ins></td>
-  </tr>
-  <tr>
-	<td class="thing"><ins>Bags</ins></td>
-    <td class="thing"><ins>Feathers</ins></td>
-	<td class="thing"><ins>Garlands</ins></td>
-  </tr>
-  <tr>
-	<td class="thing"><ins>Plant Hanger</ins></td>
-    <td class="thing"><ins>Bracelets</ins></td>
-	<td class="thing"><ins>More...</ins></td>
-  </tr>
-  
-</table>
-<p></p> 
-	
-<h2><b>Materials</b></h2>
-    <ul style="list-style-type:circle;">
-			<li style="color: darkolivegreen">Thick thread, it can be made of cotton, jute, linen, silk or other natural fibers. Your choice will depend on what you want to do.
-			<li style="color: darkolivegreen">A base to hold the craft, which can be a pencil or wooden bar.</li>
-	        <li style="color: darkolivegreen">Macrame table, in case of certain crafts such as macrame bracelets.</li>
-			<li style="color: darkolivegreen">Beads to decorate, such as wooden beads.</li>
-	        <li style="color: darkolivegreen">Scissors.</li>
-	        <li style="color: darkolivegreen">Brush.</li>
-			</li>
-	</ul>
+	 <div class="grid-container">
+		 <div class="item1"><img src="Images/Logo.png" width="200" height="150" alt="logo"/></div>	
+   <nav>
+	<div class="item2">
+		 <ul id="nav1">
+           <li><a class="active" href="index.html" id="op1">Home</a></li>
+           <li><a href="History.html" id="op2">History of Macrame</a></li>
+           <li><a href="Knots.html" id="op3">Tutorials Knots</a></li>
+           <li><a href="Inspiration.html" id="op4">Inspiration</a></li>
+           <li><a href="About.html" id="op5">About Us</a></li>
+           <li><a href="FAQ.html" id="op6">FAQ</a></li>
+        </ul>
+	</div>
+   </nav> 
+	 <div class="item3">
+		 
+	 <div class="center"><h1>New To Macramé?</h1>
+		 <h5>Here you can learn the basics of the macramé... </h5></div>
+		 <button class="button knots"><a href="Knots.html"><h4>Learn more...</h4></a></button></div>
+		 
+	 <div class="item4">
+		 <img src="Images/easymacrame.webp" width="300" height="200" alt="history" id="img1"/></div>
+	 <div class="item5">
+		 <h2>Discover Macramé</h2>
+		 <h5>What is it?, where it originated?,  types, knots, materials and more.</h5></div>
+	 <div class="item6">    
+		 <button class="button history"><a href="History.html"><h4>History of macramé...</h4></a></button></div>
+	 <div class="item7">
+		 <img src="Images/keychains.jpg" width="300" height="200" alt="inspiration" id="img2"/></div>
+	 <div class="item8">
+		 <h2>See Some Designs</h2>
+		 <h5>Watch and be inspired for your new creations.</h5></div>
+	 <div class="item9">   
+		 <button class="button inspiration"><a href="Inspiration.html"><h4>Inspiration...</h4></a></button></div>
+	 <div class="item10">
+		 <img src="Images/comunity.png" width="300" height="200" alt="comunity" id="img3"/></div>
+	  <div class="item11">
+		 <h2>We Are An Artist Community</h2>
+		 <h5>The purpose of this site is teach and share how easy macramé is.</h5></div>
+	  <div class="item12">
+         <button class="button about"><a href="About.html"><h4>About us...</h4></a></button></div>
+	  <div style="background-color: rgba(196,176,151,0.30)" class="item13">
+		 <h1 style="color: #BF8B5E">FAQ</h1>
+		 <h6 style="color: rgba(191,139,94,0.50)">* What is macramé made of?</h6>
+		 <h6 style="color: rgba(191,139,94,0.50)">* What materials I need?</h6>
+	     <button class="button faq"><a href="FAQ.html"><h4>More...</h4></a></button></div>
+		 
+	  <div style="background-color: #C9C5BA" class="item14">
+  <p><h3><a style="color: white" class="active" href="index.html">Home</a></h3></p>  
+  <p><h3><a style="color: white" href="History.html">History of Macrame</a></h3></p>
+  <p><h3><a style="color: white" href="Knots.html">Tutorials Knots</a></h3></p>
+  <p><h3><a style="color: white" href="Inspiration.html">Inspiration</a></h3></p>
+  <p><h3><a style="color: white" href="About.html">About Us</a></h3></p>
+  <p><h3><a style="color: white" href="FAQ.html">FAQ</a></h3></p>
+	 </div> 
+	 <div style="background-color: #C9C5BA" class="item15">
+		 <a href="https://www.facebook.com/"><img src="Images/face-icon.png" alt="Facebook"></a>
+		 <a href="https://www.youtube.com/"><img src="Images/youtube-icon.png" alt="Youtube"></a>
+		 <a href="https://www.instagram.com/"><img src="Images/instagram-icon.png" alt="Instagram"></a>
+		 <a href="https://www.pinterest.es/easilymacrame/"><img src="Images/pinterest-icon.png" alt="Pinterest"></a>
+	   </div>
+	 <div style="background-color: #C9C5BA" class="item16"><footer>All rights reserved ™ easy macramé 2021</footer></div>
+	</div>
 
-
-<h2><b>Macrame knots</b></h2>
-	<p>Macrame are made by making and interlacing knots, which can be the same or of different types. There are more than <i title="50 macrame knots"  style="color:rosybrown; font-size: 20px">50 macrame knots</i> that can be combined to achieve very beautiful results.</p>
-	<p>This are the three principal knots you need to know for beginning with the macrame.</p>
-	<h3><ins><em>Head Knot</em></ins></h3>
-	  <p>This knot is what gets your macrame cords attached to an object, such as dowel, branch, or an anchor cord.</p><a href="https://www.youtube.com/watch?v=U4OPF0FV5TY">https://www.youtube.com/watch?v=U4OPF0FV5TY</a>
-	<h3><ins><em>Square knot</em></ins></h3> 
-	  <p>A square knot is one of the most widely used macrame knots and need to have at least 4 cords.</p><a href="https://youtu.be/9ensp8bMFQA">https://youtu.be/9ensp8bMFQA</a>
-	<h3><ins><em>Spiral knot</em></ins></h3>
-	  <p>Is a series of half knots to create a spiral stitch.</p><a href="https://youtu.be/FLeVV9CzMO4">https://youtu.be/FLeVV9CzMO4</a>
-	<h4><a href="knots.html">For More Knots Click Here...</a></h4>
+	
 </body>
-<script>
-     document.getElementById("Macrame").innerHTML = "Things";
-   </script>
-
 </html>

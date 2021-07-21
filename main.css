@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+
+        
+body {background-color:#F2E2CE;
+ text-align: center;}
+h1 {
+	color: #BF8B5E;
+	font-family: 'Righteous', cursive;
+}
+h2 {
+	color: #BF8B5E;
+	font-family: 'Ribeye', cursive;
+}
+h3 {
+	color: white;
+	font-family: 'Indie Flower', cursive;
+}
+h4 {
+	color: #746D5A;
+	font-family: 'Dancing Script', cursive;
+}
+h5 {
+	color: #BF8B5E;
+	opacity: .5;
+	font-family: 'Lateef', cursive;
+	font-size: 35px
+}
+h6 {
+	color: #BF8B5E;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+    
+p {color: white;}
+
+
+
+	/*navegation bar*/
+#nav1 { list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ }
+
+li a {
+  display: block;
+  background-color: transparent;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:rgba(228,218,197,0.60);
+	}
+        /*links*/
+a:link {
+    color: #746D5A;
+    background-color: transparent;
+	text-decoration: none;}
+		
+a:visited {
+    color: #746D5A;
+    background-color: transparent;
+	text-decoration: none;}
+			
+a:hover {
+	color:rgba(171,124,108,0.75);
+	background-color: transparent;
+	text-decoration: underline;}
+		
+a:active {
+    color: #746D5A;
+    background-color: transparent;
+    text-decoration: none;}
+
+footer{
+	text-align: center;
+	clear: inherit;
+	color:white;
+}
+
+#img1 {
+  border-color: #C9C5BA;
+  border-radius: 15%;
+  border-style: thin;
+  box-shadow: 0 9px #C9C5BA;
+	}
+#img2 {
+  border-color: #AB7C6C;
+  border-radius: 15%;
+  border-style: thin;
+  box-shadow: 0 9px #AB7C6C;
+	}
+#img3 {
+  border-color: #CEB6AA;
+  border-radius: 15%;
+  border: thin;
+  box-shadow: 0 9px #CEB6AA;
+	}
+
+#print {
+	background-color: white;
+	color: #AB7C6C;
+	border-color: #AB7C6C;
+	border-radius: 15%;
+}
+#print:hover {
+	background-color: #AB7C6C;
+	color: white;
+}
+
+	/*mobile view*/
+@media (max-width:400px){
+	/*nav bar*/
+	nav li {
+		display: block;
+		float: center;
+		border-bottom: 1px solid #C3997B
+}
+}	
+    /*tablet view*/
+@media (min-width:401px) and (max-width:768px){
+	/*nav bar*/
+	nav li {
+		display: block;
+		float: left;
+		border-bottom: 1px solid #C3997B
+       }
+}
+
+   /*global desktop view*/
+@media (min-width:769px){
+	/*nav bar*/
+	nav li {
+		display: block;
+		float: left;
+		border-bottom: 1px solid #C3997B;
+	}
+}
